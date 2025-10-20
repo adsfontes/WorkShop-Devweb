@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="pt" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Livros</title>
+</head>
+<body>
+    <ul>
+        <li th:each="livro : ${livros}">
+            <strong th:text="${livro.titulo}"> </strong>
+            <span th:text="${livro.autor}"> </span>
+
+        </li>
+    </ul>
+    <a href="/criar">Cadastrar Livro</a>
+</body>
+</html>
